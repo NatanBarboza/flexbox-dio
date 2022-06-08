@@ -1,0 +1,28 @@
+Princípios:
+    A propriedade flexbox utiliza sobre dois conceitos, containers e itens;
+    
+    flex-container:
+        É a tag pai, que envolve os elementos filhos;
+        Terá a propriedade "display: flex";
+        Transforma todos os itens em "flex itens";
+
+        Propriedades Relacionadas (flex-container):
+            display;
+            flex-direction -> direcionamento dos itens;
+            flex-wrap -> quebra de linha;
+            flex-flow -> abreviação de wrap e direction;
+            justify-content -> alinha os itens de acordo com sua direção;
+            align-itens -> alinha os itens de acordo com o eixo;
+            align-content -> alinha as linhas do container;
+    
+    flex-item:
+        Elementos filhos diretos do flex-container;
+        Pode ser utilizada a propriedade "display: flex" - mas se tornará um flex-container;
+        
+        Propriedades Relacionadas (flex-item):
+            flex-grow -> define fator de crescimento;
+            flex-basis -> tamanho inicial do item;
+            flex-shrink -> capacidade de redução;
+            flex -> abreviação do flex-grow, flex-basis e flex-shrink;
+            order -> ordem de distribuição do itens;
+            align-self -> define o alinhamento do item específico;
