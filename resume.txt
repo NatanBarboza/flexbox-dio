@@ -26,3 +26,144 @@ Princípios:
             flex -> abreviação do flex-grow, flex-basis e flex-shrink;
             order -> ordem de distribuição do itens;
             align-self -> define o alinhamento do item específico;
+
+
+Propriedades Relacionadas:
+    flex-direction:
+        É a propriedade utilizada para trabalhar os eixos vertical e horizontal.
+        Obs.: Por padrão, a ordenação dos itens acontece em linha.
+
+        Valores:
+            row:
+                Define o eixo horizontal para os itens;
+                A visualização fica na ordem padrão dos itens, em linha;
+
+            row-reverse:
+                Define o eixo horizontal para os itens;
+                A visualização fica na ordem invertida, em linha;
+
+            column:
+                Define o eixo vertical para os itens;
+                A visualização fica na ordem padrão dos itens, em coluna;
+
+            column-reverse:
+                Define o eixo vertical para os itens;
+                A visualização fica na ordem invertida dos itens, em coluna;
+
+    flex-wrap:
+        É a propriedade que define a quebra ou não de linha dos itens;
+        Obs.: Por padrão, a quebra de linha é desabilitada e o container é obrigado a compactar os elementos internos a ele.
+
+        Valores:
+            nowrap:
+                Define a não quebra de linha;
+
+            wrap:
+                Permite a quebra de linha assim que o container não comportar o elemento em linha;
+
+            wrap-reverse:
+                Permite a quebra de linha assim que o container não comportar o elemento em linha, porém, será feito na direção contrária da linha, acima;
+
+    flex-flow:
+        É a propriedade que une as propriedades "flex-direction" e "flex-wrap".
+        Obs.: Por padrão, a ordenação dos itens são em linha e a quebra de linha é desabilitada.
+
+        Valores:
+            row nowrap:
+                Define a visualização em linha e a não quebra de linha;
+
+            row wrap:
+                Define a visualização em linha e a quebra de linha;
+
+            row wrap-reverse:
+                Define a visualização em linha e a quebra de linha inversa;
+
+            row-reverse nowrap:
+                Define a visualização em linha inversa e a não quebra de linha;
+
+            row-reverse wrap:
+                Define a visualização em linha inversa e a quebra de linha;
+
+            row-reverse wrap-reverse:
+                Define a visualização em linha inversa e a quebra de linha inversa;
+
+            column nowrap:
+                Define a visualização em coluna e a não quebra de linha;
+
+            column wrap:
+                Define a visualização em coluna e a quebra de linha;
+
+            column wrap-reverse:
+                Define a visualização em coluna e a quebra de linha inversa;
+
+            column-reverse nowrap:
+                Define a visualização em coluna inversa e a não quebra de linha;
+
+            column-reverse wrap:
+                Define a visualização em coluna inversa e a quebra de linha;
+
+            column-reverse wrap-reverse:
+                Define a visualização em coluna inversa e a quebra de linha inversa;
+
+    justify-content:
+        É a propriedade encarregada de alinhar os itens dentro do container de acordo com a direção pretendida.
+        Obs.: Se os itens estiver ocupando 100% do container, não se aplica.
+
+        Valores:
+            flex-start:
+                Define o espaço inicial do container;
+
+            flex-end:
+                Define o espaço final do container;
+
+            center:
+                Define o centro do container;
+
+            space-between:
+                Define o espaçamento entre os elementos do container;
+
+            space-around:
+                Define que o espaçamento central é duas vezes maior que o espaçamento final e inicial;
+
+    align-itens:
+        É a propriedade encarregada de alinhar os flex-itens de acordo com o eixo do container.
+        Obs.: O eixo trabalhado é o vertical. Não é necessário saber "height" do elemento.
+
+        Valores:
+            center:
+                Define o alinhamento dos itens ao centro;
+
+            stretch:
+                Define que os itens cresçam igualmente;
+
+            flex-start:
+                Define o alinhamento dos itens no início;
+
+            flex-end:
+                Define o alinhamento dos itens no final;
+
+            baseline:
+                Define o alinhamento dos itens de acordo com a linha base da tipografia dos itens;
+
+    align-content:
+        É a propriedade encarregada do alinhamento das linha do container em relação ao eixo vertical.
+        Obs.: É necessário ter quebra de linha e que a altura do container seja maior que a soma das linhas dos itens.
+
+        Valores:
+            center:
+                Define o alinhamento dos itens ao centro;
+
+            stretch:
+                Define que os flex itens cresçam igualmente;
+
+            flex-start:
+                Define o alinhamento dos itens no início;
+
+            flex-end:
+                Define o alinhamento dos itens no final;
+
+            space-between:
+                Define um espaçamento igual entre os itens;
+            
+            space-around:
+                Define que o espaçamento do centro seja duas vezes maior que o espaçamento no início e no final;
