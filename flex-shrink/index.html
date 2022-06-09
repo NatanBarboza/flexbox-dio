@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Fundamentos - flex shrink</title>
+            <style>
+                .flex-container {
+                    max-width: 300px;
+                    border: 2px solid black;
+                    display: flex;
+                    align-items: stretch;
+                }
+
+                .flex-item {
+                    width: 100px;
+                    background-color: blueviolet;
+                    color: white;
+                    text-align: center;
+                    margin: 5px;
+                    font-size: 30px;
+                }
+
+                .default {
+                    flex-shrink: 1;
+                }
+                
+                .fs-0 {
+                    flex-shrink: 0;
+                }
+                
+                .fs-2 {
+                    flex-shrink: 2;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>default</h1>
+            <div class="flex-container">
+                <div class="flex-item default">1</div>
+                <div class="flex-item default">2</div>
+                <div class="flex-item default">3</div>
+                <div class="flex-item default">4</div>
+                <div class="flex-item default">5</div>
+                <div class="flex-item default">6</div>
+                <div class="flex-item default">7</div>
+                <div class="flex-item default">8</div>
+                <div class="flex-item default">9</div>
+                <div class="flex-item default">10</div>
+            </div>
+
+            <h1>fs-0</h1>
+            <div class="flex-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item ">3</div>
+                <div class="flex-item fs-0">4</div>
+                <div class="flex-item">5</div>
+                <div class="flex-item">6</div>
+                <div class="flex-item">7</div>
+                <div class="flex-item">8</div>
+                <div class="flex-item">9</div>
+                <div class="flex-item">10</div>
+            </div>
+
+            <h1>fs-2</h1>
+            <div class="flex-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item ">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+                <div class="flex-item fs-2">6</div>
+                <div class="flex-item">7</div>
+                <div class="flex-item">8</div>
+                <div class="flex-item">9</div>
+                <div class="flex-item">10</div>
+            </div>
+        </body>
+    </html>
