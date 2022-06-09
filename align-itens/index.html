@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Fundamentos - align itens</title>
+            <style>
+                .flex-container {
+                    max-width: 350px;
+                    border: 2px solid black;
+                    display: flex;
+                }
+
+                .flex-item {
+                    background-color: blueviolet;
+                    margin: 5px;
+                    color: white;
+                    text-align: center;
+                    flex: 1;
+                }
+
+                .center {
+                    align-items: center;
+                }
+
+                .stretch {
+                    align-items: stretch;
+                }
+
+                .flex-start {
+                    align-items: flex-start;
+                }
+
+                .flex-end {
+                    align-items: flex-end;
+                }
+
+                .baseline {
+                    align-items: baseline;
+                }
+
+                .centro-tela {
+                    height: 500px;
+                    justify-content: center;
+                }
+
+                .centro-tela .flex-item {
+                    flex: 0;
+                    padding: 20px;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>center</h1>
+            <section class="flex-container center">
+                <div class="flex-item">item 1</div>
+                <div class="flex-item">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</div>
+                <div class="flex-item">item 3</div>
+            </section>
+
+            <h1>stretch</h1>
+            <section class="flex-container stretch">
+                <div class="flex-item">item 1</div>
+                <div class="flex-item">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</div>
+                <div class="flex-item">item 3</div>
+            </section>
+
+            <h1>flex-start</h1>
+            <section class="flex-container flex-start">
+                <div class="flex-item">item 1</div>
+                <div class="flex-item">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</div>
+                <div class="flex-item">item 3</div>
+            </section>
+
+            <h1>flex-end</h1>
+            <section class="flex-container flex-end">
+                <div class="flex-item">item 1</div>
+                <div class="flex-item">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</div>
+                <div class="flex-item">item 3</div>
+            </section>
+
+            <h1>baseline</h1>
+            <section class="flex-container baseline">
+                <div class="flex-item">item 1</div>
+                <div class="flex-item">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</div>
+                <div class="flex-item">item 3</div>
+            </section>
+
+            <h1>centro-tela</h1>
+            <section class="flex-container centro-tela center">
+                <div class="flex-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque labore natus quasi eos deserunt, consectetur quo dicta illo, voluptates laudantium modi, id doloremque.</div>
+            </section>
+        </body>
+    </html>
