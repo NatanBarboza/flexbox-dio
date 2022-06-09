@@ -167,3 +167,61 @@ Propriedades Relacionadas:
             
             space-around:
                 Define que o espaçamento do centro seja duas vezes maior que o espaçamento no início e no final;
+
+    flex-grow:
+        É a propriedade que define a proporcionalidade do crescimentos dos itens.
+        Obs.: Não funcionará se no flex-container estiver sendo utilizado "justify-content".
+
+        Valores:
+            São números e variam a partir de 0.
+
+    flex-basis:
+        É a propriedade que estabelece o tamanho inicial do item antes da distribuição de espaço restante dentro dele.
+        
+        Valores:
+            auto:
+                Definirá o tamanho proporcional ao conteúdo do item;
+            
+            px, %, em,...:
+                Definirá um valor exato para o tamanho do item;
+
+            0 (Zero):
+                Será relacionada a definição do flex-grow;
+
+    flex-shrink:
+        É a propriedade que define quanto um item irá diminuir em relação aos outros itens.
+
+        Valores:
+            São números e variam a partir de 0. Padrão é 1;
+
+    flex:
+        É a abreviação para as propriedades flex-grow, flex-shrink e flex-basis.
+        Obs.: A ordem para inserir valores é a citada acima.
+
+        Valores:
+            São números e variam a partir de 0.
+
+    order:
+        É a propriedade que especifica a ordem dos itens.
+        
+        Valores:
+            São números e variam de 1 a quantidade de elementos utilizada;
+
+    align-self:
+        É a propriedade que especifica o alinhamento do item dentro de um container.
+        
+        Valores:
+            stretch:
+                Define que o elemento tenha alinhamento igual do container, no eixo vertical;
+
+            center:
+                Define que o elemento tenha alinhamento central do container, no eixo vertical;
+            
+            flex-start:
+                Define que o elemento tenha alinhamento no início do container, no eixo vertical;
+            
+            flex-end:
+                Define que o elemento tenha alinhamento no final do container, no eixo vertical;
+
+            baseline:
+                Define que o elemento tenha alinhamento com base no alinhamento do container, no eixo vertical;
